@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register</title>
+</head>
+<body>
+	<h2 align="center">Register Page</h2>
+	<form action="form1.html" method="post" target="_blank">
+		<fieldset>
+			<legend>Register Form</legend>
+		<table  align="center">
+			<tr>
+				<td>
+					<label for="fname">First Name : </label>
+				</td>
+				<td>
+					<input type = "text" id="fname" placeholder="First name" required autofocus>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="lname">Last Name : </label>
+				</td>
+				<td>
+					<input type = "text" id=lname placeholder="Last Name">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="mail">Email : </label>
+				</td>
+				<td>
+					<input type="email" id="mail" required placeholder="Mail id">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="age">Age : </label>
+				</td>
+				<td>
+					<input type="number" id="age" placeholder="Age">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="mobile">Mobile : </label>
+				</td>
+				<td>
+					<input type="number" id="mobile" required placeholder="Mobile Number">
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">
+					<label>Gender : </label>
+				</td>
+				<td>
+					<input type="radio" name="gender" id="male" value="Male">
+					<label for="male">Male</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="radio" name="gender" id="female" value="FeMale">
+					<label for="female">Female</label>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="3">
+					<label>Hobbies : </label>
+				</td>
+				<td>
+					<input type="checkbox" name="Playing" id="playing" value="Playing">
+					<label for="playing">Playing </label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" name="Eating" id="Eating" value="Eaating">
+					<label for="Eating">Eating </label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" name="sleeping" id="sleeping" value="Sleeping">
+					<label for="sleeping">Sleeping </label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="pass">Password : </label>
+				</td>
+				<td>
+					<input type="text" id="pass" placeholder="Password">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="cpass">Confirm Password : </label>
+				</td>
+				<td>
+					<input type="text" id="pass" placeholder="Confirm Password">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Select State</label>
+				</td>
+				<td>
+					<select>
+						<option value="Andhra Pradesh">AP</option>
+						<option value="Tamil Nadu">TN</option>
+						<option value="Telangana">TG</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="descripton">Description :</label>
+				</td>
+				<td>
+					<textarea rows="10" cols="50">Enter Few Words</textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="favfruit">Fav Fruit :</label>
+				</td>
+				<td>
+					<input type="text" id="favfruit" list="fruitlist">
+					<datalist id="fruitlist">
+						<option value="Apple">
+						<option value="banana">
+						<option value="Cherry">
+					</datalist>
+				</td>
+			</tr>
+			<br>
+			<tr>
+				<td align="right">
+					<button type="submit">Submit Form</button>
+				</td>
+				<td align="left">
+					<input type="reset">
+				</td>
+			</tr>
+		</table>
+		</fieldset>
+	</form>
+</body>
+</html>
