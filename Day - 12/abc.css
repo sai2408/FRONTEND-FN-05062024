@@ -1,0 +1,51 @@
+.a{
+	background-color: lightgreen;
+	height : 40px;
+	width : 40%;
+	border : solid;
+	border-color: red;
+	border-width: 5px;
+	border-top-color : green;
+	border-bottom-color: blue;
+	padding : 20px;
+	margin : 10px;
+	border-radius: 100px;
+}
+.b{
+	background-color: lightgreen;
+	height : 40px;
+	width : 40%;
+	border : solid;
+	border-color: red;
+	border-width: 5px;
+	border-top-color : green;
+	border-bottom-color: blue;
+	padding-left : 100px;
+	margin-top : 30px;
+	border-radius: 20%;
+}
+.c{
+	font-family: brush script mt;
+	background-color: lightgreen;
+	height : 70px;
+	width : 50%;
+	border : solid;
+	border-color: red;
+	border-width: 5px;
+	border-top-color : green;
+	border-bottom-color: blue;
+	margin-top : 30px;
+	align-content: center;
+	text-align: center;
+	box-shadow: 10px 10px 10px orange;
+
+}
+.d{
+	background-color: green;
+	margin-top : 30px;
+	height : 100px;
+	width : 100px;
+	border-radius: 50px;
+	text-align: center;
+	align-content: center;
+}
