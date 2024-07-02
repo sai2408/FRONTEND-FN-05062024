@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test 2</title>
+	<style>
+		body{
+			background-color: #F6E3CE ;
+		}
+		@media (min-width:540px){
+			.a{
+
+				display: grid;
+				padding-top : 50px;
+				grid-template-columns: auto auto auto auto ;
+				align-content: center;
+				text-align: center;
+
+			}
+			.b{
+				margin : 50px;
+				border: solid;
+				height : 500px;
+				display: grid;
+				grid-template-columns: auto 50%;
+				align-content: center;
+			}
+			.b1{
+				height : 400px;
+				width : 90%;
+				margin-left: 30px;
+				display: grid;
+				grid-auto-rows: auto 30%;
+			}
+			.b2{
+				margin-left: 20px;
+				height : 400px;
+				width : 90%;
+			}
+			.b11{
+				height : 90%;
+				width : 90%;
+				margin-top: 10px;
+				margin-left : 20px;
+			}
+			.b12{
+				height : 90%;
+				width : 90%;
+				margin-left : 20px;
+			}
+			.ex2 div{
+				height : 50px;
+				width : 50px;
+				position: relative;
+				top : -15%;
+			}
+			.ex2{
+				display: grid;
+				grid-template-columns: auto auto auto auto;
+				margin-left : 20px;
+			}
+			.ex1{
+				padding-left: 20px;
+			}
+			img{
+				height : 100%;
+				width : 100%;
+			}
+			h1{
+				font-size: 400%;
+				position: relative;
+				top:-10%;
+			}
+			p{
+				font-size: 150%;
+				position: relative;
+				top:-20%;
+			}
+		}
+		@media (max-width:540px) and (min-width:375px){
+			.a{
+
+				display: grid;
+				padding-top : 50px;
+				grid-template-columns: auto auto;
+				grid-template-rows: auto auto;
+				row-gap : 30px;
+				align-content: center;
+				text-align: center;
+
+			}
+			.b{
+				margin : 50px;
+				border: solid;
+				height : 700px;
+				display: grid;
+				grid-auto-rows: auto auto;
+				row-gap: 10px;
+				align-content: center;
+			}
+			.b1{
+				/*background-color: green;*/
+				height : 300px;
+				width : 90%;
+				margin-left: 30px;
+				display: grid;
+				grid-auto-rows: auto 30%;
+			}
+			.b2{
+				margin-left: 20px;
+				background-color: brown;
+				height : 350px;
+				width : 90%;
+			}
+			.b11{
+/*				background-color: yellow;*/
+				height : 90%;
+				width : 90%;
+				margin-top: 10px;
+				margin-left : 20px;
+			}
+			.b12{
+/*				background-color: lightcyan;*/
+				height : 90%;
+				width : 90%;
+				margin-left : 20px;
+			}
+			.ex2 div{
+				height : 50px;
+				width : 50px;
+				position: relative;
+				top : -65%;
+			}
+			.ex2{
+				display: grid;
+				grid-template-columns: auto auto auto auto;
+				margin-left : 20px;
+			}
+			.ex1{
+				padding-left: 10px;
+				position: relative;
+				top : -30%;
+			}
+			img{
+				height : 100%;
+				width : 100%;
+			}
+			h1{
+				font-size: 200%;
+				
+			}
+			p{
+				font-size: 100%;
+				
+			}
+		
+		}
+		@media (max-width:375px){
+			.a{
+				display: grid;
+				padding-top : 50px;
+				grid-template-columns:auto;
+				grid-template-rows: auto auto auto auto;
+				row-gap : 30px;
+				align-content: center;
+				text-align: center;
+
+			}
+			.b{
+				margin : 50px;
+				border: solid;
+				height : 700px;
+				display: grid;
+				grid-auto-rows: auto auto;
+				row-gap: 10px;
+				align-content: center;
+			}
+			.b1{
+				/*background-color: green;*/
+				height : 300px;
+				width : 90%;
+				margin-left: 10px;
+				display: grid;
+				grid-auto-rows: auto 30%;
+			}
+			.b2{
+				margin-top : 10px;
+				margin-left: 10px;
+/*				background-color: brown;*/
+				height : 350px;
+				width : 90%;
+			}
+			.b11{
+/*				background-color: yellow;*/
+				height : 90%;
+				width : 90%;
+				margin-top: 10px;
+				margin-left : 20px;
+
+			}
+			.b12{
+/*				background-color: lightcyan;*/
+				height : 90%;
+				width : 90%;
+				margin-left : 0px;
+				margin-top: 20px;
+			}
+			.ex2 div{
+				height : 50px;
+				width : 50px;
+				position: relative;
+				top : -65%;
+			}
+			.ex2{
+				display: grid;
+				grid-template-columns: auto auto auto auto;
+				column-gap: 10px;
+			}
+			.ex1{
+				padding-left: 10px;
+				position: relative;
+				top : -30%;
+			}
+			img{
+				height : 100%;
+				width : 100%;
+			}
+			h1{
+				font-size: 200%;
+				
+			}
+			p{
+				font-size: 100%;
+				
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="a">
+		<div>BIO</div>
+		<div>PORTFOLIO</div>
+		<div>PODCAST</div>
+		<div>BLOG</div>
+	</div>
+	<div class="b">
+		<div class="b1">
+			<div class="b11">
+				<h1>Bethany Jones</h1>
+				<p>
+					I'm a dedicated culture critic and blogger located in San Francisco, California.
+			</div>
+			<div class=b12>
+				<div class="ex1">
+					<h3>&#x40;reallygreatsite</h3>
+				</div>
+				<div class="ex2">
+					<div>
+						<img src="insta.png">
+					</div>
+					<div>
+						<img src="facebook.png">
+					</div>
+					<div>
+						<img src="twitter.png">
+					</div>
+					<div>
+						<img src="linkedin.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="b2">
+			<img src="mainimage.png">
+		</div>
+	</div>
+
+</body>
+</html>
