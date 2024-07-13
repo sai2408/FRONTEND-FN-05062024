@@ -1,0 +1,25 @@
+1. Take the below array,n and print all the Factors of n present in the array 
+	arr = [ 10,20,7,4,3,5,30]
+	n = 30
+	output:
+	-------
+		10
+		3
+		5
+		30
+		
+2. Take the below array and print all the perfect numbers present in the 
+array
+	arr = [3,6,2,28]
+	output:
+	-------
+		6
+		28
+3. Take the below array and print factorial values for all even numbers present
+in the array
+	arr = [109,2,4,7,6,21]
+	output:
+	-------
+		2
+		24
+		720
