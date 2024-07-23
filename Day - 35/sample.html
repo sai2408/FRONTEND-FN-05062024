@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <script>
+            function capturedata(){
+                var x = document.forms["login"]["username"];
+                var un = x.value;
+                var y = document.forms["login"]["password"];
+                var pw = y.value;
+                console.log(un);
+                console.log(pw);
+                var newdata = document.createElement("h2");
+                if (un=="sai" && pw=="123"){
+                    newdata.textContent = "Welcome Sai !";
+                    document.getElementById("abc").appendChild(newdata);
+                }
+                else{
+                    newdata.textContent = "Invalid !";
+                    document.getElementById("abc").appendChild(newdata);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="abc">
+
+        </div>
+        <form name="login">
+            <input type="text" name="username">
+            <br>
+            <br>
+            <input type="password" name="password">
+            <br>
+            <br>
+            <button onclick="capturedata(); return false;">Login</button>
+        </form>
+    </body>
+</html>
+
+<!-- 
+    Username : sai
+    password : 123
+
+    Welcome Sai
+    Invalid 
+-->

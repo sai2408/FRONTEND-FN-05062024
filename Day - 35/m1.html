@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <script>
+            function gather(){
+                var x = document.getElementById("name");
+                var z = x.value;  
+                console.log(z);
+            }
+            function gather1(){
+                var x = document.querySelector("#name1");
+                var z = x.value;
+                console.log(z);
+            }
+            function gather2(){
+                var x = document.forms["form1"]["name1"];
+                var x1 = x.value;
+                console.log(x1);
+                var z = document.forms["form1"]["name2"];
+                var z1 = z.value;
+                console.log(z1);
+            }
+            function gather3(x){
+                var x1 = x.value;
+                console.log(x1);
+            }
+            function gather4(){
+                var x = document.getElementById("form2");
+                var z = new FormData(x);
+                for (var x of z.entries()){
+                    console.log(x[0]);
+                    console.log(x[1]);
+                }
+            }
+            function getdata1(){
+                var x = "Statement has to be displayed";
+                document.getElementById("abc").innerHTML = x;
+            }
+            function getdata2(){
+                var x = "I am text content";
+                document.getElementById("xyz").textContent = x;
+            }
+            function getdata3(){
+                var x = "Default Value";
+                document.getElementById("abc").value = x;
+                var z = document.getElementById("abc");
+                var z1 = z.value;
+                console.log(z1);
+            }
+            function getdata4(){
+                var x = document.createElement("h5");
+                x.textContent = "I am a new Element";
+                document.getElementById("sai").appendChild(x);
+            }
+            function getdata5(){
+                var x = "Sai Vardhan";
+                document.getElementById("mno").innerHTML = `<p>${x}</p>`;
+            }
+        </script>
+    </head>
+    <body>
+        <H1> Method 1</H1>
+        <input type="text" id="name">
+        <br>
+        <button onclick="gather()">Click me</button>
+        <br>
+        <br>
+        <h1>MEthod 2</h1>
+        <input type="text" id="name1">
+        <br>
+        <button onclick="gather1(); return false;">Click me 1</button>
+        <br>
+        <br>
+        <h1>Method 3</h1>
+        <form name="form1">
+            <input type="text" name="name1">
+            <br>
+            <input type="text" name="name2">
+            <br>
+            <button onclick="gather2(); return false;">Clickme 2</button>
+        </form>
+        <br>
+        <br>
+        <h1>MEthod 4</h1>
+        <input type="text" onchange="gather3(this)">
+        <br>
+        <br>
+        <h1>Method 5</h1>
+        <form id="form2">
+            <input type="text" name="fname">
+            <br>
+            <input type="text" name="lname">
+            <br>
+            <button onclick="gather4(); return false;">Click me 4</button>
+        </form>
+        <br>
+        <br>
+        <h1> MEthod 1</h1>
+        <h2 id="abc"></h2>
+        <button onclick="getdata1()">
+            get data 1
+        </button>
+        <br>
+        <br>
+        <h1> MEthod 2</h1>
+        <h2 id="xyz"></h2>
+        <button onclick="getdata2()">
+            get data 2
+        </button>
+        <br>
+        <br>
+        <h1> MEthod 3</h1>
+        <input type="text" id="abc" value="Normal Value">
+        <button onclick="getdata3()">
+            get data 3
+        </button>
+        <br>
+        <br>
+        <h1> Method 4</h1>
+        <div id="sai">
+            <h1>Welcome !</h1>
+        </div>
+        <button onclick="getdata4()">Click me 4</button>
+        <br>
+        <br>
+        <div id="mno">
+            <p>I am an old man</p>
+        </div>
+        <button onclick="getdata5()">Click me 5</button>
+    </body>
+</html>
